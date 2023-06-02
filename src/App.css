@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: monospace;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 40px;
+  color: black;
+  background-color: white;
+  box-shadow: 2px 4px 5px aqua;
+  padding: 10px;
+}
+
+.squareBox {
+  float: left;
+  width: 110px;
+  height: 110px;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  border: 3px solid orangered;
+  cursor: pointer;
+  font-size: 24px;
+  animation: changeColor 5s linear infinite;
+}
+
+.squareBox:hover {
+  background-color: grey;
+  color: white;
+}
+
+.squareGroup:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  font-size: 30px;
+  font-family: monospace;
+  margin: 5px 20px;
+  color: white;
+  font-weight: bolder;
+  animation: changeText 5s linear infinite;
+  text-align: center;
+}
+
+/* css  code for changing the color */
+@keyframes changeColor {
+  0% {
+    border: 3px solid orangered;
+  }
+
+  25% {
+    border: 3px solid aqua;
+  }
+
+  50% {
+    border: 3px solid rgb(18, 228, 15);
+  }
+
+  75% {
+    border: 3px solid rgb(180, 19, 212);
+  }
+
+  100% {
+    border: 3px solid rgb(228, 228, 23);
+  }
+}
+
+/* code for change text */
+@keyframes changeText {
+  0% {
+    color: rgb(18, 228, 15);
+  }
+
+  25% {
+
+    color: rgb(228, 228, 23);
+  }
+
+  50% {
+
+    color: orangered;
+  }
+
+  75% {
+    color: rgb(180, 19, 212);
+  }
+
+  100% {
+    color: aqua;
+  }
+}
+
+
+/* code for media query */
+ @media (max-width:960px) {
+  .squareBox {
+    width: 120px;
+    height: 110px;
+
+  }
+ }
+
+ /* code for footer */
+ footer{
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding:5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+ }
+ #admin{
+  color: orangered;
+ }
+
+
+
